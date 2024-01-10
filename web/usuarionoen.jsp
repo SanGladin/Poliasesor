@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Recuperar Contraseña</title>
+        <link rel="shortcut icon" href="img/incio.png">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <link rel="stylesheet" href="css/contraol.css">
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="stylesheet" href="./css/inicio.css">
+    <link rel="stylesheet" href="./css/scrollbar.css">
+    <script src="https://kit.fontawesome.com/579fe2a44d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/paginaPrincipal.css">
+    <link rel="stylesheet" href="./css/index.css">
+        <script>
+
+            window.onkeydown = function () {
+
+                var myInput = document.getElementById('usu');
+                myInput.onpaste = function (e) {
+                    e.preventDefault();
+                };
+                myInput.oncopy = function (e) {
+                    e.preventDefault();
+                };
+                var myInput = document.getElementById('pass');
+                myInput.onpaste = function (e) {
+                    e.preventDefault();
+                };
+                myInput.oncopy = function (e) {
+                    e.preventDefault();
+                };
+
+            };
+            window.onload() = function (){
+
+                if (window.screen.width < 1200) {
+                    var img = document.getElementById("poliimg");
+                    img.style.visibility = "hidden";
+                    img.style.marginRight = "0vw";
+
+                }
+                ;
+
+
+
+
+            }
+            ;
+           
+
+            document.addEventListener('contextmenu', event => event.preventDefault());
+        </script>
+    </head>
+
+    <body class="cont">
+        <header>
+        <div class="primera seccion">
+            <figure class="logo-ipn">
+                <a href="https://www.ipn.mx"><img src="img/logo.png"></a>
+            </figure>
+            <!--formulario con filtros termina-->
+        </div>
+        <div class="segunda seccion">
+            <figure class="logo-poliasesor">
+                <img src="img/3 (2).png">
+            </figure>
+        </div>
+        <div class="tercera seccion flex">
+            <a href="info.html"><i class="fa-solid fa-circle-info"></i></a>
+            <a href="Inicio.jsp">Iniciar sesión</a>
+
+        </div>
+    </header>
+
+    <div class="alinear">
+        <div class="inicio">
+            <center><img class="poliasesor" src="img/Poliasesor.png">
+
+                <form name="formulario" method="post" action="correo">
+
+
+
+                    <input type="text" name="usu" id="usu" autocomplete="off" maxlength="12" placeholder="Usuario" required onkeypress="return (event.charCode >= 48 && event.charCode <= 57)">
+                    <br>
+
+                    <br>
+                    <div>
+                        <input type="email" id="pass" placeholder="Correo electronico" name="cont" autocomplete="off" required onkeypress="return (event.charCode !== 60 && event.charCode !== 62)">
+
+
+                        <br>
+
+                        <br>
+                        <br>
+
+                        <input type="submit" id="ini" value="Recuperar Contraseña" class="button">
+                        <br>
+                        <br>
+                    </div>
+                </form>
+            </center>
+        </div>
+    </div>        
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script>
+                            Swal.fire(
+                                    'Usuario no Encontrado',
+                                    'los datos ingresados no pertenecen a ninguno de nuestros usuarios',
+                                    'error',
+                                    );
+        </script>
+
+    </body>
+
+</html>

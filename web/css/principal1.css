@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+* {
+    font-family: 'Roboto';
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../img/aa.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#cecyts {
+    background-color: #74003E;
+    border-radius: 20px;
+    color: white;
+    font-size: 18px;
+}
+
+.center {
+    text-align: center;
+    width: 95%;
+    margin: 0 auto;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.button {
+    width: 150px;
+    height: 40px;
+    margin: 10px auto;
+    color: #74003E;
+    border: 2px solid #74003E;
+    box-sizing: border-box;
+    border-radius: 70px;
+    font-size: medium;
+    font-size: 18px;
+    background-color: white;
+}
+
+.button:hover {
+    color: white;
+    background-color: #74003E;
+    cursor: pointer;
+}
+
+.in {
+    width: 100%;
+    max-width: 300px;
+    padding: 3px;
+    margin-top: 2px;
+    border: none;
+    border-bottom: 5px solid #74003E;
+    font-size: 18px;
+}
+
+h1 {
+    color: #74003e;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+label {
+    background-color: #ffffff00;
+    font-size: 20px;
+}
+
+table {
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 2px 3px 8px rgb(191, 191, 191);
+}
+
+.as {
+    padding: 10px;
+    border: 1px solid #74003E;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.as:hover {
+    background-color: #74003E;
+    color: white;
+}
+
+input[type="radio"]::after {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    background: rgb(235, 235, 235);
+    border: 1px solid rgb(116, 0, 62);
+    border-radius: 15px;
+    transform: scale(1.1);
+    top: -4px;
+    left: -4px;
+    content: "";
+    display: inline-block;
+    transition: 200ms;
+}
+
+input[type="radio"]:checked::after {
+    background: rgb(116, 0, 62);
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}

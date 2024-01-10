@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+* {
+    font-family: 'Roboto';
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../img/aa.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Roboto';
+}
+
+h1 {
+    font-size: 45px;
+    margin-top: 50px;
+    text-align: center;
+    color: #74003E;
+}
+
+h2 {
+    font-size: 30px;
+    margin: 20px;
+    text-align: center;
+    color: #74003E;
+}
+
+p {
+    color: #74003E;
+    font-size: 20px;
+}
+
+.main {
+    border: 1px solid #74003E;
+    width: 60%;
+    margin: 10px auto;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.677);
+}
+
+.info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reporte {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.flexV {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.tarea {
+    resize: none;
+    border: 3px solid #74003E;
+    max-width: 600px;
+    min-width: 90%;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.in {
+    border-bottom: 3px solid #74003E;
+    text-align: center;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.btn {
+    color: #74003E;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #74003E;
+    cursor: pointer;
+    text-align: center;
+    font-size: 18px;
+}
+
+.btn:hover {
+    color: white;
+    background-color: #74003E;
+}
+
+select {
+    font-size: 18px;
+}
+
+input[type=time] {
+    border-bottom: 3px solid #74003E;
+}

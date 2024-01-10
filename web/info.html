@@ -1,0 +1,92 @@
+<html>
+
+<head>
+    <title>Aviso de Privacidad</title>
+    <link rel="shortcut icon" href="img/xxx.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="css/info.css">
+    <link rel="stylesheet" href="./css/scrollbar.css">
+    <link rel="stylesheet" href="./css/paginaPrincipal.css">
+     <script>
+        function uncheck() {
+            var checkbox1 = document.getElementById("asesor");
+            var checkbox2 = document.getElementById("asesorado");
+            checkbox1.onclick = function() {
+                if (checkbox1.checked != false) {
+                    checkbox2.checked = null;
+                }
+            }
+            checkbox2.onclick = function() {
+                if (checkbox2.checked != false) {
+                    checkbox1.checked = null;
+                }
+            }
+        }
+
+
+
+        function prueb() {
+            window.alert("Error");
+        }
+        document.addEventListener('contextmenu', event => event.preventDefault());
+    </script>
+</head>
+
+<body class="cont">
+    <header>
+        <div class="primera seccion">
+            <figure class="logo-ipn">
+                <a href="https://www.ipn.mx"><img src="img/logo.png"></a>
+            </figure>
+            <!--formulario con filtros termina-->
+        </div>
+        <div class="segunda seccion">
+            <figure class="logo-poliasesor">
+                <img src="img/3 (2).png">
+            </figure>
+        </div>
+        <div class="tercera seccion">
+
+            <a href="Inicio.jsp">Iniciar sesión</a>
+
+        </div>
+    </header>
+
+    <div class="politicas">
+        <center>
+            <img src="img/Poliasesor.png" class="img">
+        </center>
+        <h1>¿Que es PoliAsesor?</h1>
+        <br>
+        <p>Es una aplicación web para facilitar y agilizar la gestión de las asesorías que beneficia a alumnos, docentes y personal administrativo en el Instituto Politécnico Nacional que esta disponible durante las 24 horas del día, todos los días.</p>
+        <center>
+            <h1>Aviso de Privacidad</h1>
+            <embed src="pdf/a.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" class="pdf" />
+        </center>
+    </div>
+    
+
+
+    <footer>
+
+        <div class="container-body">
+
+
+            <div class="colum2">
+                <h1>Contacto</h1>
+                <div class="row">
+                    <label>Instituto Politécnico Nacional (IPN). Unidad Profesional Adolfo López Mateos, Av. Juan de Dios Bátiz, Gustavo A. Madero, 07320 Ciudad de México, CDMX Conmutador: 55 5729 6000</label>
+                </div>
+
+                <div class="row">
+                    <label>gescolar_escom@ipn.mx</label>
+                </div>
+                <br>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

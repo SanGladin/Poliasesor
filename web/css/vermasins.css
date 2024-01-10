@@ -1,0 +1,154 @@
+/*El diseño en figma es para pantallas de 1455x731, debido a esto decidí darme pequeñas libertades creativas
+resoluciones mayores*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+* {
+    font-family: 'Roboto';
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    transition: 200ms;
+    outline: none;
+    border: none;
+}
+
+body {
+    background-image: url(../img/aa.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+form {
+    /*Mala prácica, buen resultado*/
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+div.todo {
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10vh;
+    border: 2px solid rgb(116, 0, 62);
+    border-radius: 20px;
+    padding: 25px 40px 40px 40px;
+    background-color: white;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.628);
+}
+
+section.columnas {
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div.flex-prl {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.columnas .con-borde {
+    border: 2px solid rgb(116, 0, 62);
+    margin: 10px 0 10px 0;
+    padding: 10px;
+}
+
+.unicas {
+    width: 100%;
+}
+
+div#columna-izquierda,
+div#columna-derecha {
+    width: 17vw;
+}
+
+div#columna-izquierda {
+    align-self: start;
+}
+
+#cuadro-inicial {
+    margin-top: 35px;
+}
+
+.btn {
+    background-color: rgb(255, 255, 255);
+    color: #74003e;
+    text-align: center;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+    pointer-events: none;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.sub {
+    background-color: rgb(255, 255, 255);
+    color: #74003e;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #74003e;
+    margin: 10px;
+    font-size: 18px;
+    pointer-events: all;
+}
+
+.sub:hover {
+    color: white;
+    background-color: #74003e;
+}
+
+input {
+    pointer-events: none;
+}
+
+.todo {
+    font-size: 20px;
+}
+
+.alinearFlex {
+    display: flex;
+    justify-content: space-around;
+}
+
+::placeholder {
+    font-size: 16px;
+}
+
+textarea {
+    font-size: 18px;
+}
+
+input[type="time"] {
+    font-size: 18px;
+}
+
+.sub {
+    cursor: pointer;
+}
+
+.sb-columna {
+    width: 100%;
+    max-width: 300px;
+}
+.center{
+    display:flex;
+    justify-content: center;
+}

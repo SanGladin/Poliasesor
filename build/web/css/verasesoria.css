@@ -1,0 +1,505 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+
+
+/* 
+    Created on : 21/11/2021, 09:54:49 PM
+    Author     : Administrador
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+body {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 0;
+    margin-left: 0;
+    background-image: url(../img/aa.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+* {
+    font-family: 'Roboto';
+}
+
+.DescripcionAsesoria {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    right: 10%;
+    top: 15%;
+    border: 2px solid #74003E;
+    background: white;
+    border-radius: 20px;
+    z-index: -1;
+}
+
+.Descripcion {
+    position: absolute;
+    width: 49.5%;
+    height: 15%;
+    right: 40.5%;
+    top: 21%;
+    padding: 1%;
+    border: 2px solid #74003E;
+    background: white;
+}
+
+.Nombre {
+    position: absolute;
+    width: 49.5%;
+    height: fit-content;
+    right: 40.5%;
+    top: 5%;
+    padding: 1%;
+    border: 2px solid #74003E;
+    background: white;
+}
+
+.nombrein {
+    width: 95%;
+    font-family: 'Roboto';
+}
+
+.Temas {
+    position: absolute;
+    width: 20%;
+    height: fit-content;
+    right: 70%;
+    top: 43%;
+    padding: 1%;
+    border: 2px solid #74003E;
+    background: white;
+}
+
+.Zoom {
+    position: absolute;
+    width: 20%;
+    height: fit-content;
+    right: 70%;
+    top: 69%;
+    padding: 1%;
+    border: 2px solid #74003E;
+    background: white;
+}
+
+.materiales {
+    position: absolute;
+    width: 25.5%;
+    height: fit-content;
+    right: 40.5%;
+    top: 43%;
+    padding: 1%;
+    border: 2px solid #74003E;
+    background: white;
+}
+
+.CupoMax {
+    position: absolute;
+    width: 25.5%;
+    height: fit-content;
+    right: 40.5%;
+    top: 64%;
+    padding: 1%;
+    border: 2px solid #74003E;
+    background: white;
+}
+
+.CupoDis {
+    position: absolute;
+    width: 25.5%;
+    height: fit-content;
+    right: 40.5%;
+    top: 77%;
+    padding: 1%;
+    border: 2px solid #74003E;
+    background: white;
+}
+
+.horario {
+    position: absolute;
+    text-align: center;
+    width: 28%;
+    height: 50.5%;
+    right: 7.5%;
+    top: 5%;
+    font-size: 1.3vw;
+    line-height: 155%;
+    padding: 1%;
+    border: 2px solid #74003E;
+    background: white;
+}
+
+.edicion {
+    position: absolute;
+    font-size: 5mm;
+    color: #74003E;
+    text-align: center;
+    width: 15%;
+    height: 8%;
+    right: 23%;
+    top: 72%;
+    border-radius: 7px;
+    border: 2px solid #74003E;
+    background: white;
+}
+
+.borrar {
+    position: absolute;
+    font-size: 5mm;
+    color: #74003E;
+    text-align: center;
+    width: 15%;
+    height: 8%;
+    right: 7%;
+    top: 72%;
+    border-radius: 7px;
+    border: 2px solid #74003E;
+    background: white;
+}
+
+.lista {
+    position: absolute;
+    font-size: 5mm;
+    color: #74003E;
+    text-align: center;
+    width: 15%;
+    height: 8%;
+    right: 7%;
+    top: 85%;
+    border-radius: 7px;
+    border: 2px solid #74003E;
+    background: white;
+}
+
+.lista:hover {
+    color: white;
+    background-color: #74003E;
+    cursor: pointer;
+}
+
+.edicion:hover {
+    background: #74003E;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.borrar:hover {
+    background: #74003E;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.ipn {
+    margin-top: 1px;
+    margin-left: .5vw;
+}
+
+.dropbtn {
+    background-color: #cbdae400;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-top: .6vw;
+}
+
+.dropbtn:hover {
+    color: #74003E;
+}
+
+.eliminar {
+    position: absolute;
+    font-size: 5mm;
+    color: #74003E;
+    text-align: center;
+    width: 15%;
+    height: 8%;
+    right: 23%;
+    top: 85%;
+    border-radius: 7px;
+    border: 2px solid #74003E;
+    background: white;
+}
+
+.eliminar:hover {
+    color: white;
+    background: #74003E;
+    cursor: pointer;
+}
+
+.dropbtn1 {
+    background-color: #cbdae400;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropfiltro {
+    position: relative;
+    display: inline-block;
+}
+
+.dropfiltro-content {
+    display: none;
+    background-color: hsla(0, 0%, 0%, 0.72);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropfiltro-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropfiltro-content a:hover {
+    background-color: #ddd;
+}
+
+.dropfiltro:hover .dropfiltro-content {
+    display: block;
+}
+
+.dropfiltro:hover .dropfiltro {
+    background-color: #3e8e41;
+}
+
+
+/* Dropdown button on hover & focus */
+
+.dropbtn:hover,
+.dropbtn:focus {
+    background-color: #00000000;
+    z-index: 5;
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 5;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+
+.dropdown-content {
+    display: none;
+    float: right;
+    background-color: hsla(0, 0%, 0%, 0.72);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+
+/* Links inside the dropdown */
+
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: white;
+    font-family: 'Roboto';
+}
+
+.butcar {
+    width: 57%;
+}
+
+.butcarr {
+    background-color: rgba(0, 0, 0, 0);
+    border-top: white 1px solid;
+    border-left: 0;
+    border-right: white 1px solid;
+    border-bottom: white 1px solid;
+    margin-top: 1.5vw;
+    margin-left: -1.2vw;
+    border-bottom-right-radius: 70px;
+    border-top-right-radius: 70px;
+}
+
+.filtro {
+    width: 120%;
+    margin-left: -1.5vw;
+}
+
+.nav::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    color: red;
+}
+
+.butcarr:focus {
+    outline: white;
+}
+
+.butcarr:hover {
+    background-color: rgba(0, 0, 0, 0.767);
+}
+
+.nav {
+    display: inline-flex;
+    margin-left: 1vw;
+    border-top-left-radius: 70px;
+    border-bottom-left-radius: 70px;
+    padding: 4px;
+    background-color: rgba(0, 0, 0, 0);
+    border: white 1px solid;
+    font-family: 'Roboto';
+    color: white;
+    margin-right: 16px;
+    font-size: 17px;
+    margin-top: 1.5vw;
+    border-right: 0;
+}
+
+.nav:focus {
+    outline: none;
+}
+
+
+/* Change color of dropdown links on hover */
+
+.dropdown-content a:hover {
+    color: #74003E;
+}
+
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+
+.show {
+    display: block;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 2px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.72);
+    top: 0;
+    font-size: 3.5vh;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 14px;
+    text-decoration: none;
+    padding-top: 17%;
+    padding-bottom: 0px;
+    font-size: 17px;
+    font-family: 'Roboto';
+}
+
+li a:hover {
+    color: #74003E;
+}
+
+select {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border-radius: 20px;
+    font-size: 15px;
+}
+
+select:focus {
+    outline: none;
+}
+
+option {
+    background-color: rgba(0, 0, 0, 0.72);
+}
+
+input {
+    border: 0;
+}
+
+.uni {
+    color: white;
+    font-family: 'Roboto';
+    margin: 0;
+    display: inline-flex;
+    margin-left: 1vw;
+    margin-bottom: 1vw;
+    margin-right: 1vw;
+}
+
+input[type=checkbox] {
+    margin-right: .5vw;
+    margin-left: 1vw;
+    border-radius: 5px;
+}
+
+input[type=time] {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: 1px white solid;
+    border-radius: 3px;
+    width: 6vw;
+}
+
+input[type=date] {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: 1px white solid;
+    border-radius: 5px;
+}
+
+input[type=time]:focus {
+    outline: none;
+}
+
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+textarea {
+    border: 0;
+    width: 97%;
+    resize: none;
+    font-size: 'Roboto';
+}
+
+input[type=text] {
+    font-family: 'Roboto';
+    font-size: 16px;
+    width: 95%;
+}
+
+input[type=text]:focus {
+    outline: none;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+input[type=number]:focus {
+    outline: none;
+}
+
+.ase {
+    color: white;
+    font-family: 'Roboto';
+    margin: 0;
+    display: inline-flex;
+    margin-bottom: 1vw;
+    margin-right: .3vw;
+}

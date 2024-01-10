@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+* {
+    font-family: 'Roboto';
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../img/aa.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/*
+<div id="2" class="alinear">
+        <div>
+            <img class="logPoli" src="img/Poliasesor.png">
+            <a class="button" href="Inicio.jsp">Iniciar Sesíon</a>
+        </div>
+    </div>
+*/
+
+.div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logPoli {
+    width: 90%;
+    max-width: 500px;
+}
+
+.alinear {
+    height: 100vh;
+}
+
+@media (max-width: 600px) {
+    .alinear {
+        background-color: #ffffff9b;
+    }
+}
+
+.button {
+    text-decoration: none;
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+    color: #74003E;
+    border: 2px solid #74003E;
+    box-sizing: border-box;
+    border-radius: 70px;
+    font-family: 'Roboto';
+    font-size: medium;
+    text-align: center;
+    font-size: 18px;
+}
+
+.button:hover {
+    color: white;
+    background-color: #74003E;
+    transition: all 0.2s ease-in-out;
+}
+
+a.button {
+    color: #74003E;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+}
+
+i {
+    font-size: 30px;
+}

@@ -1,0 +1,212 @@
+        /*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+        /* 
+    Created on : 25/11/2021, 11:05:29 PM
+    Author     : Administrador
+*/
+        
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+        body {
+            width: 100%;
+            overflow: hidden;
+            margin-top: 0;
+            margin-left: 0;
+            background-image: url(../img/aa.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        
+        .ipn {
+            margin-top: 1px;
+            margin-left: .5vw;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 2px;
+            overflow: hidden;
+            background-color: rgba(0, 0, 0, 0.72);
+            top: 0;
+            font-size: 3.5vh;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 14px;
+            text-decoration: none;
+            padding-top: 17%;
+            padding-bottom: 0px;
+            font-size: 17px;
+            font-family: 'Roboto';
+        }
+        
+        li a:hover {
+            color: #74003E;
+        }
+        
+        .dropbtn {
+            background-color: #cbdae400;
+            color: white;
+            padding: 16px;
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
+            margin-top: .6vw;
+        }
+        
+        .dropbtn:hover {
+            color: #74003E;
+        }
+        
+        ul li a {
+            text-decoration: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .regresar {
+            float: right;
+        }
+        
+        .perfildiv {
+            justify-self: center;
+            align-items: center;
+            margin-top: 4vw;
+            max-width: 95%;
+            width: 470px;
+            background: #FFFFFF;
+            border: 3px solid #74003E;
+            box-shadow: 13px 12px 4px #00000040;
+        }
+        
+        .imgpoli {
+            float: right;
+            margin-top: .4vw;
+            display: flex;
+            margin-right: 37.5vw;
+        }
+        
+        .datos {
+            font-size: 17.075px;
+            margin-top: 1vw;
+            display: inline-block;
+            margin-left: 20px;
+            font-family: 'Roboto';
+            max-width: 100%;
+        }
+        
+        .contraseña {
+            border: 0;
+            font-family: 'Roboto';
+            font-size: 17px;
+            float: left;
+            width: 19ch;
+            border-radius: 2px;
+            margin-left: 2px;
+            margin-top: -16px;
+        }
+        
+        .passtxt {
+            display: inline-flex;
+            font-weight: 500;
+            float: left;
+            color: rgb(102, 102, 102);
+            margin-top: -12px;
+            margin-bottom: 0px;
+        }
+        
+        hr {
+            border: 1px #74003E solid;
+            top: 10px;
+            margin-right: 24px;
+        }
+        
+        input:focus {
+            outline: none;
+        }
+        
+        .contracam {
+            border: 2px #74003E solid;
+            background: none;
+            font-family: 'Roboto';
+            border-radius: 12px;
+            font-size: 20.49px;
+            padding-left: 1vw;
+            padding-right: 1vw;
+            font-weight: 400;
+            color: #74003E;
+            display: inline-flex;
+        }
+        
+        .contracance {
+            border: 2px #74003E solid;
+            background: none;
+            font-family: 'Roboto';
+            border-radius: 12px;
+            font-size: 20.49px;
+            padding-left: 1vw;
+            padding-right: 1vw;
+            font-weight: 400;
+            color: #74003E;
+            display: inline-flex;
+        }
+        
+        table {
+            margin-top: 60px;
+            margin-left: -15px;
+        }
+        
+        .contracance:hover,
+        .contracam:hover {
+            color: white;
+            background-color: #74003E;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        h1 {
+            color: #74003E;
+        }
+        
+        .contra {
+            color: #74003E;
+            font-size: 13px;
+            float: left;
+            margin-top: -200px;
+        }
+        
+        #icon {
+            width: 2.5vw;
+            float: right;
+            margin-top: -1.2vw;
+            margin-right: 1.6vw;
+            min-width: 30px;
+        }
+        
+        @media (max-width: 650px) {
+            .passtxt {
+                border: none;
+                margin: 2px;
+            }
+            .contraseña {
+                border-bottom: 1px solid #74003E;
+                width: 95%;
+                max-width: 300px;
+                margin: 1px;
+            }
+            hr {
+                visibility: hidden;
+            }
+        }

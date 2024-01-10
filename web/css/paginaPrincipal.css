@@ -1,0 +1,492 @@
+/*El diseño en figma es para pantallas de 1455x731, debido a esto decidí darme pequeñas libertades creativas
+resoluciones mayores*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+* {
+    font-family: 'Roboto';
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    outline: none;
+    border: none;
+    transition: 200ms;
+}
+
+body {
+    background-image: url(../img/aa.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header,
+div.seccion,
+div.botones {
+    display: flex;
+    color: rgb(235, 235, 235);
+    /*Evitar usar blancos o negros absolutos*/
+    align-items: center;
+    overflow: hidden;
+}
+
+header {
+    justify-content: space-between;
+    width: 100%;
+    backdrop-filter: brightness(45%);
+    background: rgba(0, 0, 0, 0.5);
+    height: 67px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: fixed;
+    z-index: 1;
+}
+
+.fltro {
+    padding: 1px;
+    border: 1px solid #74003e;
+    width: 90%;
+    overflow: hidden;
+    margin: 47px auto;
+    text-align: center;
+    visibility: hidden;
+    transition: 1100ms;
+    visibility: hidden;
+    opacity: 0;
+    color: white;
+    backdrop-filter: brightness(65%);
+    background: rgba(0, 0, 0, 0.76);
+    overflow: hidden;
+    position: fixed;
+}
+
+
+/*
+*
+    backdrop-filter: brightness(65%);
+    background: rgba(0, 0, 0, 0.5);
+    margin: 47px auto;
+    padding: 25px;
+    width: 10%;
+    transition: 200ms;
+    float: right;
+    visibility: hidden;
+    opacity: 0;
+*/
+
+.fltro.active {
+    visibility: visible;
+    transition: 1100ms;
+    backdrop-filter: brightness(65%);
+    background: rgba(0, 0, 0, 0.76);
+    position: static;
+    opacity: 1;
+}
+
+.section {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.section>div {
+    margin: 10px;
+}
+
+div.buscador-personas input {
+    font-size: 13px;
+    font-weight: 300;
+    width: 210px;
+    min-height: 21px;
+    color: rgb(235, 235, 235);
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid rgb(235, 235, 235);
+    border-radius: 15px;
+    padding: 5px;
+    margin-left: 10px;
+    appearance: none;
+}
+
+div.buscador-personas a {
+    font-size: 23px;
+    margin-left: 10px;
+}
+
+div.buscador-personas input:focus {
+    border: 1px solid #74003e;
+    font-weight: 500;
+}
+
+div.botones div p {
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 10px;
+}
+
+div.botones a {
+    font-size: 37px;
+    font-weight: lighter;
+    margin-left: 4px;
+    margin-right: 4px;
+    /*Esto me lo pude ahorrar con margin-inline pero no lo recomiendo pq no jala en firefox*/
+}
+
+figure img {
+    max-height: 60px;
+}
+
+figure.logo-poliasesor {
+    margin-left: 200px;
+    /*Se arregla con el responsive, usar otras unidades me da weba*/
+}
+
+div.filtros {
+    left: 50%;
+    display: block;
+    position: absolute;
+    visibility: visible;
+    transition: 1100ms;
+    top: 340%;
+    transform: translate(-50%, -50%);
+    backdrop-filter: brightness(65%);
+    background: rgba(0, 0, 0, 0.76);
+    /*Para centrar todo el desmadre de filtros*/
+}
+
+div.filtros.active {
+    transition: 1100ms;
+    visibility: visible;
+    display: block;
+    position: absolute;
+    top: 500%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    backdrop-filter: brightness(65%);
+    background: rgba(0, 0, 0, 0.76);
+    /*Para centrar todo el desmadre de filtros*/
+    font-size: 26px;
+    padding-top: 28px;
+    padding-left: 28px;
+    padding-right: 28px;
+}
+
+div.filtros section {
+    display: flex;
+    padding: 22px;
+}
+
+hr {
+    border: 1px solid rgb(116, 0, 62);
+    margin-top: 15px;
+}
+
+input[type="radio"]::after {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    background: rgb(235, 235, 235);
+    border: 1px solid rgb(116, 0, 62);
+    border-radius: 15px;
+    transform: scale(1.1);
+    top: -4px;
+    left: -4px;
+    content: "";
+    display: inline-block;
+    transition: 200ms;
+}
+
+input[type="radio"]:checked::after {
+    background: rgb(116, 0, 62);
+}
+
+
+/*Chulada de radios*/
+
+div.filtros input {
+    margin-bottom: 30px;
+}
+
+.segunda-columna div input {
+    background: rgb(235, 235, 235);
+    border: 1px solid rgb(116, 0, 62);
+    border-radius: 25px;
+    padding: 5px;
+    font-size: 20px;
+    min-width: 108px;
+    min-height: 43px;
+    color: rgb(116, 0, 62);
+}
+
+.primera-columna,
+.segunda-columna {
+    display: flex;
+    flex-direction: column;
+}
+
+div.filtros .segunda-columna {
+    margin-left: 20px;
+}
+
+div.desplegable:hover {
+    color: rgb(116, 0, 62);
+    cursor: pointer;
+}
+
+div.desplegable {
+    display: block;
+    position: absolute;
+    visibility: hidden;
+    top: 155%;
+    right: -10%;
+    transform: translate(-5%, -50%);
+    transition: 200ms;
+}
+
+.lista-sesion {
+    backdrop-filter: brightness(65%);
+    background: rgba(0, 0, 0, 0.5);
+    margin: 47px auto;
+    margin-left: 85%;
+    padding: 25px;
+    width: 15%;
+    transition: opacity 200ms;
+    float: right;
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    text-align: center;
+}
+
+.lista-sesion.sexo {
+    visibility: visible;
+    transition: opacity 200ms;
+    opacity: 1;
+    margin-left: 85%;
+    
+}
+
+div.desplegable div.lista-sesion.sexo {
+    visibility: visible;
+    display: block;
+    position: absolute;
+    top: 155%;
+    right: 0%;
+    transform: translate(-5%, -50%);
+    background: rgba(0, 0, 0, 0.76);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+div.desplegable div.lista-sesion a {
+    font-size: 18px;
+}
+
+
+/*Para links en general*/
+
+a:-webkit-any-link {
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(235, 235, 235);
+}
+
+a:hover {
+    color: rgb(116, 0, 62);
+}
+
+
+/*Quitar la "x" en el buscador*/
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}
+
+.btn {
+    background-color: rgb(255, 255, 255);
+    color: #74003e;
+    text-align: center;
+    border-radius: 5px;
+    margin: 10px auto;
+}
+
+.btnBoleta {
+    background: rgba(0, 0, 0, 0);
+    color: white;
+    margin: 0px 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btnBoleta:hover {
+    color: #74003e;
+}
+
+@media only screen and (max-width: 1400px) {
+    header {
+        height: 47px;
+        padding-left: 5px;
+        padding-right: 5px;
+        position: fixed;
+    }
+    div.buscador-personas input {
+        font-size: 10px;
+        font-weight: 300;
+        width: 150px;
+        min-height: 21px;
+        border: 1px solid rgb(235, 235, 235);
+        border-radius: 15px;
+        padding: 5px;
+        margin-left: 7px;
+        appearance: none;
+    }
+    div.buscador-personas a {
+        font-size: 17px;
+        margin-left: 7px;
+    }
+    div.buscador-personas input:focus {
+        font-weight: 400;
+    }
+    div.botones div p {
+        font-size: 13px;
+        font-weight: 400;
+        padding-left: 5px;
+    }
+    div.botones a {
+        font-size: 27px;
+        font-weight: lighter;
+        margin-left: 4px;
+        margin-right: 4px;
+        /*Esto me lo pude ahorrar con margin-inline pero no lo recomiendo pq no jala en firefox*/
+    }
+    figure img {
+        max-height: 35px;
+    }
+    figure.logo-poliasesor {
+        margin-left: 70px;
+    }
+    div.filtros {
+        left: -50%;
+        display: block;
+        position: absolute;
+        visibility: hidden;
+        transition: 1100ms;
+        top: 300%;
+        transform: translate(-50%, -50%);
+        backdrop-filter: brightness(65%);
+        background: rgba( 0, 0, 0, 0.76);
+        /*Para centrar todo el desmadre de filtros*/
+        font-size: 12px;
+        padding-top: 14px;
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+    div.filtros.active {
+        transition: 1100ms;
+        visibility: visible;
+        display: block;
+        position: absolute;
+        top: 300%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+        backdrop-filter: brightness(65%);
+        background: rgba( 0, 0, 0, 0.76);
+        /*Para centrar todo el desmadre de filtros*/
+        font-size: 12px;
+        padding-top: 14px;
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+    div.filtros section {
+        display: flex;
+        padding: 12px;
+    }
+    hr {
+        border: 1px solid rgb(116, 0, 62);
+        margin-top: 7px;
+    }
+    div.filtr input[type="radio"]::after {
+        width: 11px;
+        height: 11px;
+        top: -1px;
+        left: 0px;
+    }
+    /*Chulada de radios*/
+    div.filtros input {
+        margin-bottom: 20px;
+    }
+    .segunda-columna div input {
+        font-size: 13px;
+        min-width: 54px;
+        min-height: 22px;
+    }
+    div.filtros .segunda-columna {
+        margin-left: 20px;
+    }
+    div.desplegable div.lista-sesion {
+        top: 165%;
+        right: -10%;
+        transform: translate(-5%, -50%);
+        transition: 200ms;
+    }
+    div.desplegable div.lista-sesion.sexo {
+        top: 165%;
+        right: 0%;
+        transform: translate(-5%, -50%);
+        background: rgba(0, 0, 0, 0.76);
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+    div.desplegable div.lista-sesion a {
+        font-size: 13px;
+    }
+    .fltro {
+        padding: 10px;
+        background-color: rgb(87, 165, 249);
+        border: 1px solid #74003e;
+        width: 90%;
+        margin-top: 27px;
+        overflow: hidden;
+    }
+}
+
+table {
+    background-color: white;
+    border: 1px solid black;
+    max-width: 90%;
+    margin: auto;
+    padding: 10px;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.cbox {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+select {
+    margin: 10px auto;
+    border: 1px solid #74003e;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+input[type="time"] {
+    color: #74003e;
+    border: 1px solid white;
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+    color: #74003e;
+}
